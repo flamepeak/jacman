@@ -40,20 +40,24 @@ body
   float left
   width 75%
   margin-left 0.5em
+  margin-top 1em
   h1.site-name
-    width 86%
+    width 90%
     if ShowCustomFont
       font-family font-custom-family
-      font-size font-size+100
-      line-height line-height
+      font-size font-size+120
+      font-weight 700
+      letter-spacing -1px
+      line-height 0.95
       font-smoothing()
+      color #fff
       @media mini
         font-size font-size+140
       @media tablet
-        font-size font-size+180
+        font-size font-size+190
     else
       font-family font-default
-      font-size font-size+60
+      font-size font-size+100
       line-height line-height+0.4
       font-weight normal
       @media mini
@@ -61,12 +65,13 @@ body
       @media tablet
         font-size font-size+120
   h2.blog-motto
-    font-size 0.7em
-    font-weight normal
+    font-size font-size
+    font-weight 400
+    letter-spacing 0.01rem
     @media mini
       font-size font-size
     @media tablet
-      font-size font-size+10
+      font-size font-size+30
 
 .navbar
   position absolute
@@ -93,7 +98,7 @@ header nav
   @media tablet
     float right
     width auto
-    margin-top 1em
+    margin-top 0.2em
     max-height none
   font-size font-size+12.5
   padding-top 0.5em
