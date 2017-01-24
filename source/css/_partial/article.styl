@@ -3,7 +3,7 @@
   a
     color color-blue 
     &:hover
-      color color-orange     //color-theme
+      color color-red     //color-theme
 
 article
   header.article-info
@@ -62,19 +62,30 @@ article
       text-shadow 0 1px 0 color-white
       line-height line-height
       white-space nowrap
-    h1,h2
-      font-size font-size+80
+    h1
+      font-size font-size+140
       line-height 1.2em
-      padding-bottom 0.3em
+      padding-bottom 0.1em
+      margin-top 1.5em
+      border-bottom 2px solid lighten(color-gray,30%)
+    h2
+      font-size font-size+110
+      line-height 1.2em
+      padding-bottom 0.1em
       margin-top 1.5em
       border-bottom 2px solid lighten(color-gray,30%)
     h3
-      font-size font-size+40
+      font-size font-size+80
       line-height 1em
       margin-top 1.3em
-    h4,h5,h6
-      font-size font-size+40
+    h4
+      font-size font-size+60
+    h5
+      font-size font-size+35
+    h6
+      font-size font-size+10
     h1,h2,h3,h3,h4,h5,h6
+      font-weight bold
       color color-heading
       font-smoothing antialiased
       >code
@@ -121,18 +132,22 @@ article
     ul li>code,ol li>code,p code,strong code,em code,table th>code,table td>code
       font-family font-mono
       background color-code
-      color #D14
-      border 1px solid darken(color-code,10%)
-      padding 0 5px
-      margin 0 2px
-      font-size 90%
-      white-space nowrap
-      text-shadow 0 1px #fff
+      color #ff0080
+      border 0px solid darken(color-code,10%)
+      padding 1px 1px
+      margin 0 0px
+      font-size 100%
+      white-space pre-wrap
+      text-shadow 0 0px #fff
       -webkit-border-radius 0.25em
-      border-radius 0.25em
+      border-radius 2px
     p
+      font-size font-size+5
       line-height line-height
       margin-top 0.7em
+      color #3A4145
+      letter-spacing 0.01rem
+      text-rendering geometricPrecision
       @media tablet
         margin-top 1em
     img,video,figure img
