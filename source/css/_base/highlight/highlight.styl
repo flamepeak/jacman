@@ -4,7 +4,7 @@
 
 @require "theme"
 
-highlight-font-size = 0.9em
+highlight-font-size = 18px
 
 $code-block
   background highlight-background
@@ -12,6 +12,7 @@ $code-block
   padding 0.5em 2%
   color highlight-foreground
   line-height line-height
+  font-family font-codeblock
   font-size 0.8em
   -webkit-border-radius 0.35em
   border-radius 0.35em
@@ -103,12 +104,14 @@ $line-numbers
 
 pre
   .comment
-  .title
     color highlight-comment
+  .title
+    color highlight-def
   .variable
   .attribute
   .tag
   .regexp
+    color highlight-green
   .ruby .constant
   .xml .tag .title
   .xml .pi
@@ -121,7 +124,9 @@ pre
   .number
   .preprocessor
   .built_in
+    color highlight-orange
   .literal
+    color highlight-literal
   .params
   .constant
     color highlight-orange
@@ -130,6 +135,7 @@ pre
   .css .rules .attribute
     color highlight-green
   .string
+    color highlight-string
   .value
   .inheritance
   .header
@@ -149,4 +155,4 @@ pre
     color highlight-blue
   .keyword
   .javascript .function
-    color highlight-purple
+    color highlight-red
